@@ -8,9 +8,9 @@
 	JNC GO
 	INR C
 	GO: STA 2002H
-		MOV A,C
-		STA 2003H
-		HLT    	
+	    MOV A,C
+	    STA 2003H
+	    HLT    	
 
 ;Using opcode
 	2000: FF 
