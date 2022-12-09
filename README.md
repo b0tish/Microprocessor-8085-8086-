@@ -59,8 +59,41 @@
 - maintains the order of execution
 ```
 
+## Flags
+Five flags
+- ### Carry(CY)
+```
+- stores carry/borrow of the operation
+- '1' if there is a carry
+- else '0'
+```
 
+- ### Auxiliary Carry(CY)
+```
+d7 d6 d5 d4  d3 d2 d1 d0 
+0  1  0  1   1  0  1  0
+0  1  0  1   1  0  1  0
+There AC bit is set if there is a carry/borrow when adding bits from d3 
+```
 
+- ### Zero(Z)
+```
+- if the bit is set('1'), the result of the previous operation is zero
+- if the bit is '0', the result was not zero
+```
+
+- ### Sign(S)
+```
+- indicates whether result of the operation is negative or positive
+- '1' indicates negative
+- '0' indivates positive
+```
+
+- ### Parity(P)
+```
+- if the number of 1's is even, the bit is set(i.e is '1')
+- else '0'
+```
 
 # 8086
 ```
