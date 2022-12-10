@@ -1,4 +1,4 @@
-mvi a, 00h
+lda 2050h
 mvi c, 0ah
 lxi h, 2050h
 next: cmp m
